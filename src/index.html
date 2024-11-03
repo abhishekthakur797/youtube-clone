@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/icons8-youtube.svg"
+      type="image/x-icon"
+    />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black text-white font-sans">
+    <!--! 1. Navbar-->
+    <div
+      class="navbar flex justify-between text-xl items-center fixed bg-black text-white w-full h-14 p-3 top-0 left-0 z-50"
+    >
+      <!--! Navbar Left-->
+      <div class="navbar-left flex items-center gap-2 ml-2 mt-1">
+        <i class="fa-solid fa-bars cursor-pointer"></i>
+        <a href="youtube.com"
+          ><img src="./img/logo white.png" alt="" class="w-24"
+        /></a>
+      </div>
+      <!--! Navbar Center-->
+      <div class="navbar-center">
+        <input
+          type="text"
+          name="search"
+          id=""
+          placeholder="search"
+          class="rounded-full border-gray-500 bg-gray-900 px-3 py-1.5 text-base w-80 outline-none border-none"
+        />
+        <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+        <i class="fa-solid fa-microphone cursor-pointer"></i>
+      </div>
+      <!--! Navbar Right-->
+      <div class="navbar-right flex gap-3 mr-5">
+        <i class="fa-solid fa-video cursor-pointer"></i>
+        <i class="fa-solid fa-bell text-yellow-400 cursor-pointer"></i>
+        <i class="fa-solid fa-user cursor-pointer"></i>
+      </div>
+    </div>
+    <!--! Sidebar quick topics and main content-->
+    <div class="container flex pt-16">
+      <!--! Side Bar-->
+      <div class="side-bar fixed top-0 left-0 h-screen w-20 p-4 pt-20 bg-black">
+        <div
+          class="side-bar-section flex flex-col text-center mb-6 cursor-pointer gap-1"
+        >
+          <i class="fa-solid fa-house"></i>
+          <h5 class="text-xs font-light">Home</h5>
+        </div>
+        <div
+          class="side-bar-section flex flex-col text-center mb-6 cursor-pointer gap-1"
+        >
+          <i class="fa-solid fa-video"></i>
+          <h5 class="text-xs font-light">Video</h5>
+        </div>
+        <div
+          class="side-bar-section flex flex-col text-center mb-6 cursor-pointer gap-1"
+        >
+          <i class="fa-solid fa-play font-light"></i>
+          <h5 class="text-xs">Music</h5>
+        </div>
+        <div
+          class="side-bar-section flex flex-col text-center mb-6 cursor-pointer gap-1"
+        >
+          <i class="fa-solid fa-user font-light"></i>
+          <h5 class="text-xs">You</h5>
+        </div>
+      </div>
+      <!--! quick topics and main container -->
+      <div class="main-container ml-20">
+        <!--! quick topics -->
+        <div
+          class="quick-topics text-sm ml-3 flex gap-2 fixed bg-black p-2 w-screen -mt-2"
+        >
+          <button
+            class="quick-topics-btn bg-white text-black rounded-md px-2 py-1"
+          >
+            All
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            Music
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            AI
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            JavaScript
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            Cricket
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            Web Development
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            React
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            India
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            Gadgets
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            Reviews
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            Movies
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            Travel
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            Photography
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            Startups
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            Health
+          </button>
+          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+            Education
+          </button>
+        </div>
+        <!--! Content Section-->
+        <div class="content-main mt-10 grid grid-cols-3">
+          <!--! 1st content-->
+          <div class="content-card p-3">
+            <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs"
+              ><img class="rounded-lg" src="./img/Thumbnails/1.jpg" alt=""
+            /></a>
+            <div class="content-info flex mt-2 text-xs">
+              <a href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                ><img
+                  class="thumbnail rounded-full w-12"
+                  src="./img/Thumbnails/1 profile.jpg"
+                  alt=""
+              /></a>
+              <div class="content-text ml-3 flex flex-col">
+                <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs">
+                  <p class="video-tittle font-bold">
+                    How RUSSIAN VILLAGES Look: Ride around my countryside with
+                    me
+                  </p></a
+                >
+                <a
+                  class="mt-1 text-gray-400"
+                  href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                  >Agent Nesty</a
+                >
+                <div class="content-meta flex gap-2 text-gray-400">
+                  <p class="views">1M</p>
+                  <p class="upload-date">1 month ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--! content end-->
+          <!--! 2nd content-->
+          <div class="content-card p-3">
+            <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs"
+              ><img class="rounded-lg" src="./img/Thumbnails/1.jpg" alt=""
+            /></a>
+            <div class="content-info flex mt-2 text-xs">
+              <a href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                ><img
+                  class="thumbnail rounded-full w-12"
+                  src="./img/Thumbnails/1 profile.jpg"
+                  alt=""
+              /></a>
+              <div class="content-text ml-3 flex flex-col">
+                <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs">
+                  <p class="video-tittle font-bold">
+                    How RUSSIAN VILLAGES Look: Ride around my countryside with
+                    me
+                  </p></a
+                >
+                <a
+                  class="mt-1 text-gray-400"
+                  href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                  >Nothing</a
+                >
+                <div class="content-meta flex gap-2 text-gray-400">
+                  <p class="views">1M</p>
+                  <p class="upload-date">1 month ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--! content end-->
+          <!--! 1st content-->
+          <div class="content-card p-3">
+            <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs"
+              ><img class="rounded-lg" src="./img/Thumbnails/1.jpg" alt=""
+            /></a>
+            <div class="content-info flex mt-2 text-xs">
+              <a href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                ><img
+                  class="thumbnail rounded-full w-12"
+                  src="./img/Thumbnails/1 profile.jpg"
+                  alt=""
+              /></a>
+              <div class="content-text ml-3 flex flex-col">
+                <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs">
+                  <p class="video-tittle font-bold">
+                    How RUSSIAN VILLAGES Look: Ride around my countryside with
+                    me
+                  </p></a
+                >
+                <a
+                  class="mt-1 text-gray-400"
+                  href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                  >Agent Nesty</a
+                >
+                <div class="content-meta flex gap-2 text-gray-400">
+                  <p class="views">1M</p>
+                  <p class="upload-date">1 month ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--! content end-->
+          <!--! 1st content-->
+          <div class="content-card p-3">
+            <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs"
+              ><img class="rounded-lg" src="./img/Thumbnails/1.jpg" alt=""
+            /></a>
+            <div class="content-info flex mt-2 text-xs">
+              <a href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                ><img
+                  class="thumbnail rounded-full w-12"
+                  src="./img/Thumbnails/1 profile.jpg"
+                  alt=""
+              /></a>
+              <div class="content-text ml-3 flex flex-col">
+                <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs">
+                  <p class="video-tittle font-bold">
+                    How RUSSIAN VILLAGES Look: Ride around my countryside with
+                    me
+                  </p></a
+                >
+                <a
+                  class="mt-1 text-gray-400"
+                  href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                  >Agent Nesty</a
+                >
+                <div class="content-meta flex gap-2 text-gray-400">
+                  <p class="views">1M</p>
+                  <p class="upload-date">1 month ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--! content end-->
+          <!--! 1st content-->
+          <div class="content-card p-3">
+            <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs"
+              ><img class="rounded-lg" src="./img/Thumbnails/1.jpg" alt=""
+            /></a>
+            <div class="content-info flex mt-2 text-xs">
+              <a href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                ><img
+                  class="thumbnail rounded-full w-12"
+                  src="./img/Thumbnails/1 profile.jpg"
+                  alt=""
+              /></a>
+              <div class="content-text ml-3 flex flex-col">
+                <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs">
+                  <p class="video-tittle font-bold">
+                    How RUSSIAN VILLAGES Look: Ride around my countryside with
+                    me
+                  </p></a
+                >
+                <a
+                  class="mt-1 text-gray-400"
+                  href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                  >Agent Nesty</a
+                >
+                <div class="content-meta flex gap-2 text-gray-400">
+                  <p class="views">1M</p>
+                  <p class="upload-date">1 month ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--! content end-->
+          <!--! 1st content-->
+          <div class="content-card p-3">
+            <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs"
+              ><img class="rounded-lg" src="./img/Thumbnails/1.jpg" alt=""
+            /></a>
+            <div class="content-info flex mt-2 text-xs">
+              <a href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                ><img
+                  class="thumbnail rounded-full w-12"
+                  src="./img/Thumbnails/1 profile.jpg"
+                  alt=""
+              /></a>
+              <div class="content-text ml-3 flex flex-col">
+                <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs">
+                  <p class="video-tittle font-bold">
+                    How RUSSIAN VILLAGES Look: Ride around my countryside with
+                    me
+                  </p></a
+                >
+                <a
+                  class="mt-1 text-gray-400"
+                  href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                  >Agent Nesty</a
+                >
+                <div class="content-meta flex gap-2 text-gray-400">
+                  <p class="views">1M</p>
+                  <p class="upload-date">1 month ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--! content end-->
+          <!--! 1st content-->
+          <div class="content-card p-3">
+            <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs"
+              ><img class="rounded-lg" src="./img/Thumbnails/1.jpg" alt=""
+            /></a>
+            <div class="content-info flex mt-2 text-xs">
+              <a href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                ><img
+                  class="thumbnail rounded-full w-12"
+                  src="./img/Thumbnails/1 profile.jpg"
+                  alt=""
+              /></a>
+              <div class="content-text ml-3 flex flex-col">
+                <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs">
+                  <p class="video-tittle font-bold">
+                    How RUSSIAN VILLAGES Look: Ride around my countryside with
+                    me
+                  </p></a
+                >
+                <a
+                  class="mt-1 text-gray-400"
+                  href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                  >Agent Nesty</a
+                >
+                <div class="content-meta flex gap-2 text-gray-400">
+                  <p class="views">1M</p>
+                  <p class="upload-date">1 month ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--! content end-->
+          <!--! 1st content-->
+          <div class="content-card p-3">
+            <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs"
+              ><img class="rounded-lg" src="./img/Thumbnails/1.jpg" alt=""
+            /></a>
+            <div class="content-info flex mt-2 text-xs">
+              <a href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                ><img
+                  class="thumbnail rounded-full w-12"
+                  src="./img/Thumbnails/1 profile.jpg"
+                  alt=""
+              /></a>
+              <div class="content-text ml-3 flex flex-col">
+                <a href="https://youtu.be/meSLlseYaLg?si=Rpku3kEWzkXxa9Bs">
+                  <p class="video-tittle font-bold">
+                    How RUSSIAN VILLAGES Look: Ride around my countryside with
+                    me
+                  </p></a
+                >
+                <a
+                  class="mt-1 text-gray-400"
+                  href="https://www.youtube.com/channel/UCravAQX9gFINPvPxdnKnS3Q"
+                  >Agent Nesty</a
+                >
+                <div class="content-meta flex gap-2 text-gray-400">
+                  <p class="views">1M</p>
+                  <p class="upload-date">1 month ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--! content end-->
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/afcdfd8069.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
