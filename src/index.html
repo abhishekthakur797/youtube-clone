@@ -8,7 +8,7 @@
       href="img/icons8-youtube.svg"
       type="image/x-icon"
     />
-    <title>YouTube</title>
+    <title>YouTube Clone</title>
     <link rel="stylesheet" href="output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,32 +27,40 @@
       <div class="navbar-left flex items-center gap-2 ml-2 mt-1">
         <i class="fa-solid fa-bars cursor-pointer"></i>
         <a href="youtube.com"
-          ><img src="./img/logo white.png" alt="" class="w-24"
+          ><img src="./img/logo white.png" alt="" class="yt-icon w-24"
         /></a>
       </div>
       <!--! Navbar Center-->
-      <div class="navbar-center">
+      <div
+        class="navbar-center md:flex md:flex-row md:items-center md:gap-2 lg:flex lg:flex-row lg:items-center lg:gap-2"
+      >
         <input
           type="text"
           name="search"
-          id=""
+          id="input-box"
           placeholder="search"
-          class="rounded-full border-gray-500 bg-gray-900 px-3 py-1.5 text-base w-80 outline-none border-none"
+          class="hidden md:block md:rounded-full md:border-gray-500 md:bg-gray-900 md:px-3 md:py-1.5 md:text-base md:w-80 md:outline-none md:border-none lg:block lg:rounded-full lg:border-gray-500 lg:bg-gray-900 lg:px-3 lg:py-1.5 lg:text-base lg:w-80 lg:outline-none lg:border-none"
         />
-        <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
-        <i class="fa-solid fa-microphone cursor-pointer"></i>
+        <i class="fa-solid fa-magnifying-glass search-icon cursor-pointer"></i>
+        <div class="hidden lg:block md:block">
+          <i class="fa-solid fa-microphone cursor-pointer"></i>
+        </div>
       </div>
       <!--! Navbar Right-->
-      <div class="navbar-right flex gap-3 mr-5">
+      <div
+        class="navbar-right hidden md:flex md:gap-3 md:mr-5 lg:flex lg:gap-3 lg:mr-5"
+      >
         <i class="fa-solid fa-video cursor-pointer"></i>
         <i class="fa-solid fa-bell text-yellow-400 cursor-pointer"></i>
         <i class="fa-solid fa-user cursor-pointer"></i>
       </div>
     </div>
     <!--! Sidebar quick topics and main content-->
-    <div class="container flex pt-16">
+    <div class="container md:ml-6 flex gap-0 items-center justify-center pt-16">
       <!--! Side Bar-->
-      <div class="side-bar fixed top-0 left-0 h-screen w-20 p-4 pt-20 bg-black">
+      <div
+        class="side-bar hidden w-0 p-0 lg:fixed lg:top-0 lg:left-0 lg:h-screen lg:w-20 lg:p-4 lg:pt-20 lg:bg-black lg:block"
+      >
         <div
           class="side-bar-section flex flex-col text-center mb-6 cursor-pointer gap-1"
         >
@@ -79,64 +87,111 @@
         </div>
       </div>
       <!--! quick topics and main container -->
-      <div class="main-container ml-20">
+      <div class="main-container lg:ml-20">
         <!--! quick topics -->
         <div
-          class="quick-topics text-sm ml-3 flex gap-2 fixed bg-black p-2 w-screen -mt-2"
+          class="quick-topics hidden lg:block lg:text-sm lg:ml-3 llg:flex lg:gap-2 lg:fixed lg:bg-black lg:p-2 lg:w-screen lg:-mt-2"
         >
           <button
             class="quick-topics-btn bg-white text-black rounded-md px-2 py-1"
           >
             All
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             Music
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             AI
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             JavaScript
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             Cricket
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             Web Development
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             React
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             India
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             Gadgets
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             Reviews
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             Movies
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             Travel
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             Photography
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             Startups
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             Health
           </button>
-          <button class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1">
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
             Education
+          </button>
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
+            Laptops
+          </button>
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
+            Mobiles
+          </button>
+          <button
+            class="quick-topics-btn bg-gray-800 rounded-md px-2 py-1 hover:bg-white hover:text-black"
+          >
+            WordPress
           </button>
         </div>
         <!--! Content Section-->
-        <div class="content-main mt-10 grid grid-cols-3">
+        <div
+          class="content-main mt-0 lg:mt-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1"
+        >
           <!--! content-->
           <div class="content-card p-3">
             <a
