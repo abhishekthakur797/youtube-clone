@@ -214,3 +214,19 @@ videosData.forEach((video) => {
 
   contentMain.appendChild(contentCard);
 });
+
+// when user click on search icon it will show input box
+
+const inputBox = document.getElementById("input-box");
+const searchIcon = document.getElementById("search-icon");
+const navbarCenter = document.querySelector(".navbar-center");
+
+const mobileMedia = window.matchMedia("(max-width: 767px");
+
+searchIcon.addEventListener("click", function () {
+  if (mobileMedia.matches) {
+    inputBox.classList.remove("hidden");
+    inputBox.classList.add("block");
+    // navbarCenter.classList.add("flex","");
+  }
+});

@@ -25,23 +25,26 @@
     >
       <!--! Navbar Left-->
       <div class="navbar-left flex items-center gap-2 ml-2 mt-1">
-        <i class="fa-solid fa-bars cursor-pointer"></i>
+        <div class="hidden md:block lg:block">
+          <i class="fa-solid fa-bars cursor-pointer"></i>
+        </div>
         <a href="youtube.com"
           ><img src="./img/logo white.png" alt="" class="yt-icon w-24"
         /></a>
       </div>
       <!--! Navbar Center-->
-      <div
-        class="navbar-center md:flex md:flex-row md:items-center md:gap-2 lg:flex lg:flex-row lg:items-center lg:gap-2"
-      >
+      <div class="navbar-center flex flex-row items-center gap-2">
         <input
           type="text"
           name="search"
           id="input-box"
           placeholder="search"
-          class="hidden md:block md:rounded-full md:border-gray-500 md:bg-gray-900 md:px-3 md:py-1.5 md:text-base md:w-80 md:outline-none md:border-none lg:block lg:rounded-full lg:border-gray-500 lg:bg-gray-900 lg:px-3 lg:py-1.5 lg:text-base lg:w-80 lg:outline-none lg:border-none"
+          class="hidden rounded-full bg-white text-black outline-none border-none w-60 px-2 py-0.5 text-base md:block md:w-80 md:px-3 md:py-1.5 lg:block lg:w-80 lg:px-3 lg:py-1.5"
         />
-        <i class="fa-solid fa-magnifying-glass search-icon cursor-pointer"></i>
+        <i
+          class="fa-solid fa-magnifying-glass search-icon cursor-pointer"
+          id="search-icon"
+        ></i>
         <div class="hidden lg:block md:block">
           <i class="fa-solid fa-microphone cursor-pointer"></i>
         </div>
@@ -239,6 +242,16 @@
         </div>
       </div>
     </div>
+    <!--! Footer for mobile -->
+    <footer
+      class="sm:w-screen px-10 p-2 text-xl bg-gray-900 text-white flex justify-between items-center cursor-pointer fixed bottom-0 left-0 right-0 md:hidden lg:hidden"
+    >
+      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-video"></i>
+      <i class="fa-solid fa-plus border-2 rounded-full p-1"></i>
+      <i class="fa-solid fa-play"></i>
+      <i class="fa-solid fa-user"></i>
+    </footer>
     <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/afcdfd8069.js"
