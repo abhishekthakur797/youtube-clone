@@ -13,11 +13,12 @@ A responsive and dynamic clone of the YouTube interface built using **HTML**, **
 
 ## Technologies Used
 
-- **HTML5**
-- **CSS** (Styled using **Tailwind CSS** for utility-first design)
-- **JavaScript** (Dynamic content rendering)
-- **Font Awesome** (Icons)
-- **Google Fonts** (Roboto font)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Font Awesome](https://img.shields.io/badge/font%20awesome-%23339AF0.svg?style=for-the-badge&logo=font-awesome&logoColor=white)
+![Google Fonts](https://img.shields.io/badge/google%20fonts-%234285F4.svg?style=for-the-badge&logo=google-fonts&logoColor=white)
 
 ## File Structure
 
