@@ -29,8 +29,8 @@ A responsive and dynamic clone of the YouTube interface built using **HTML**, **
 ### 📱 Mobile and Tablet View
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="./src/img/readme_files/Mobile.png" alt="MOBILE 1" style="width: 45%;"/>
-    <img src="./src/img/readme_files/Tablet.png" alt="TABLET 1" style="width: 67%;"/>
+  <img src="./src/img/readme_files/Mobile.png" alt="MOBILE 1" style="width: 40%;"/>
+    <img src="./src/img/readme_files/Tablet.png" alt="TABLET 1" style="width: 57%;"/>
 </div>
 
 ## 🚀 How to Use
